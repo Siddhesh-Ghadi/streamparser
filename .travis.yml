@@ -19,14 +19,15 @@ after_success:
 matrix:
     allow_failures:
         - python: nightly
-        
-# Disable Version pypy3,nightly for power support          
-jobs:
     exclude:
         - arch: ppc64le
           python: "pypy3"
         - arch: ppc64le
           python: "nightly"
+        
+# Disable Version pypy3,nightly for power support          
+jobs:
+    
 script:
     - python --version
 notifications:
