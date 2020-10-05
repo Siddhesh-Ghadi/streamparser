@@ -19,6 +19,8 @@ after_success:
 matrix:
     allow_failures:
         - python: nightly
+        
+matrix:        
     exclude:
         - arch: ppc64le
           python: "pypy3"
