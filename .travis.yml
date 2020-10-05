@@ -24,9 +24,9 @@ matrix:
 jobs:
     exclude:
         - arch: ppc64le
-          python: pypy3
+          python: "pypy3"
         - arch: ppc64le
-          python: nightly
+          python: "nightly"
 script:
     - python --version
 notifications:
